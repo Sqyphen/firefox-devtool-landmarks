@@ -1,0 +1,512 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Debugger 3D Map Styles
+   ========================================================================== */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#main_container {
+    height: 800px;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #333;
+}
+
+.bank {
+    height: 100%;
+    width: 350px;
+}
+.east {
+    background-color: #F00;
+    float: left;
+}
+.west {
+    background-color: #00F;
+    float: right
+}
+
+
+.building,
+.bridge,
+.container,
+.stem,
+.tower,
+.wall {
+    position: absolute;
+    background-color: #D8CBB0;
+}
+    .tower .stem,
+    .wall .stem {
+        height: 100%;
+        width: 100%;
+    }
+.parliment {
+    background: none;
+    top: 460px;
+    left: 120px;
+    height: 320px;
+    width: 220px;
+}
+
+.northWall {
+    top: 10px;
+    left: 100px;
+    height: 20px;
+    width: 80px;
+}
+.eastWall {
+    top: 50px;
+    left: 200px;
+    height: 230px;
+    width: 20px;
+}
+.southWall {
+    top: 300px;
+    left: 80px;
+    height: 20px;
+    width: 100px;
+}
+.westWall {
+    top: 50px;
+    left: 40px;
+    height: 230px;
+    width: 20px;
+}
+.northSouthInnerWall {
+    top: 30px;
+    left: 130px;
+    height: 270px;
+    width: 10px;
+}
+.eastWestInnerWall {
+    background-color: #DDD;
+    top: 190px;
+    left: 60px;
+    height: 10px;
+    width: 140px;
+}
+
+.northEastTower,
+.southEastTower,
+.southWestTower {
+    height: 40px;
+    width: 40px;
+}
+.northEastTower {
+    background-color: #DDD;
+    top: 10px;
+    left: 180px;
+}
+.southEastTower {
+    background-color: #DDD;
+    top: 280px;
+    left: 180px;
+}
+.southWestTower {
+    background-color: #DDD;
+    top: 280px;
+    left: 40px;
+}
+
+
+.westminserHall {
+    background-color: #DDD;
+    top: 90px;
+    left: 1px;
+    height: 110px;
+    width: 50px;
+}
+    .westminserHall .stem {
+        height: 100%;
+        width: 100%;
+    }
+
+.victoria {
+    background-color: #DDD;
+    top: 180px;
+    left: 120px;
+    height: 30px;
+    width: 30px;
+}
+
+.queenElizabethTower {
+    background-color: #DDD;
+    left: 40px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+    .queenElizabethTower .stem {
+        height: 50px;
+        width: 50px;
+    }
+        .stem .small4,
+        .stem .small3,
+        .stem .small2,
+        .stem .small1 {
+            margin: 5px;
+        }
+        .stem .small4 {
+            height: 40px;
+            width: 40px;
+        }
+        .stem .small3 {
+            height: 30px;
+            width: 30px;
+        }
+            .small3.mid {
+                margin: 0px;
+            }
+        .stem .small2 {
+            height: 20px;
+            width: 20px;
+        }
+        .stem .small1 {
+            height: 10px;
+            width: 10px;
+        }
+        .stem.base {
+            margin: 10px;
+        }
+    .queenElizabethTower .face {
+        height: 70px;
+        width: 70px;
+    }
+        .face.base {
+            margin: -10px;
+        }
+.westminster {
+    background-color: #DDD;
+    top: 400px;
+    height: 50px;
+    width: 900px;
+}
+
+
+.londonEye
+{
+    background: none;
+    top: 60px;
+    left: 520px;
+    height: 200px;
+    width: 200px;
+}
+    .londonEye .support,
+    .londonEye .wheel {
+        background: none;
+    }
+    .londonEye .wheel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding-top: 100px;
+        height: 180px;
+        width: 20px;
+    }
+        .wheel .stem {
+            background-color: #FFFFFF;
+            width: 20px;
+        }
+        .stem .circle10, .stem .circle0 { height: 30px; }
+        .stem .circle9, .stem .circle1 { height: 60px; }
+        .stem .circle8, .stem .circle2 { height: 90px; }
+        .stem .circle7, .stem .circle3 { height: 120px; }
+        .stem .circle6, .stem .circle4 { height: 150px; }
+        .stem .circle5 { height: 180px; }
+
+        .stem .circle0 { top: 15px; }
+        .stem .circle1 { top: 15px; }
+        .stem .circle2 { top: 15px; }
+        .stem .circle3 { top: 15px; }
+        .stem .circle4 { top: 15px; }
+        .stem .circle5 { top: -15px; }
+        .stem .circle6 { top: -15px; }
+        .stem .circle7 { top: -15px; }
+        .stem .circle8 { top: -15px; }
+        .stem .circle9 { top: -15px; }
+        .stem .circle10 { top: -15px; }
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
